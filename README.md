@@ -5,6 +5,7 @@
 This project implements a membership inference attack on a pre-trained ResNet18 model. The goal is to classify whether a given sample is a member of the model's training dataset based on its features and outputs. This task involves feature extraction, model training, and prediction, followed by evaluation of the attack's performance using metrics like TPR@FPR=0.05 and AUC.
 
 ## Datasets
+The datasets couldn't be upload on this GitHub repository because of the size limit for commit files but can be found on the link : https://docs.google.com/document/d/1HQZqWQpI8wg_zdV3mi6CRJdfml23KTws6DOAAyfenwA/edit?tab=t.0 
 - **PUB Dataset**: Contains labeled samples (with `ids`, `imgs`, `labels`, and `membership` fields). Used for training and validating the membership inference model.
 - **PRIV OUT Dataset**: Contains unlabeled samples (with `membership` field set to None). Predictions are made on this dataset to submit to the evaluation server.
 
